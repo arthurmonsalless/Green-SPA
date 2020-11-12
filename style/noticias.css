@@ -1,0 +1,258 @@
+/* resetando a tela */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* boot css */
+
+.center{
+    max-width: 1280;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 8%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+/* inicio do header */
+
+body{
+    background-color: #f8d6c4;
+}
+
+header{
+    padding: 5px 0;
+    background-color: #6b3808e7;
+}
+
+.logo a{
+    text-decoration: none; /*tirando a decoração*/
+    color: #ffffff;
+}
+
+img[id="logomarca"]{
+    width: 200px;
+    height: 60px;
+    padding: 3px;
+
+    object-fit: cover; /*adapta a imagem para se alargar na div*/
+}
+
+.mobile{
+    display: none;
+}
+
+nav .desktop ul{
+    position: relative;
+    top: 3px;
+    list-style-type: none;
+}
+
+nav.desktop li{
+    font-size: 18px;
+    padding: 25px 10px;
+    display: inline-block;
+}
+
+nav.desktop a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+/* noticias */
+
+
+
+/* historia */
+
+section.historia{
+    margin: 30px 30px;
+    background-color: #e7ece8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px;
+}
+
+section.historia h2{
+    font-size: 23px;
+    text-align: center;
+    padding: 13px 0px;
+    background-color: #d1ddd2;
+}
+
+div.img{
+    display: flex;
+    background-color: #e7ece8;
+    padding: 20px 0px 15px 0px;
+    align-self: center;
+    margin: 0px 30px;
+
+}
+
+img{
+    max-width: 500px;
+}
+
+div.historia p{
+    text-align: left;
+    margin: 0px 30px;
+    font-size: 17px;
+    
+}
+
+section.noticias{
+    margin: 30px 30px;
+    background-color: #e7ece8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px;
+}
+
+section.noticias h2{
+    font-size: 23px;
+    text-align: center;
+    padding: 13px 0px;
+    background-color: #d1ddd2;
+}
+
+div.noticias p{
+    text-align: left;
+    margin: 0px 30px;
+    font-size: 17px; 
+    padding: 13px 0px;  
+}
+
+section.empresa{
+    margin: 30px 30px;
+    background-color: #e7ece8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px;
+}
+
+section.empresa h2{
+    font-size: 23px;
+    text-align: center;
+    padding: 13px 0px;
+    background-color: #d1ddd2;
+}
+
+div.empresa p{
+    text-align: center;
+    margin: 0px 30px;
+    font-size: 18px;   
+}
+
+footer a {
+    color: #d5dfd6;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: #9b592ed3;
+  }
+
+/* mobile e desktop */
+
+@media screen and (max-width: 771px){
+    img{
+        display: block;
+        margin: 0 auto;
+        /* max-width: 600px; */
+        float: none !important;
+    }
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+    .box-especialidade{
+        margin: 0;
+        padding: 40px 20px;
+    }
+} 
+
+@media screen and (max-width: 770px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    nav.mobile ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 3;
+        top: 75px;
+        text-align: center;
+        width: 100%;
+    }
+    nav.mobbile li{
+        border-bottom: 1px solid rgb(204, 204, 204);
+        font-size: 15px;
+        display: block;
+    }
+    nav.mobile li a{
+        background: #ffffff;
+        font-weight: 300;
+        display: block;
+        color: #333333;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .botao-menu-mobile{
+        font-size: 25px;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 19px 31px;
+    }
+
+    #slider {
+        display: flex;
+        flex-direction: center;
+        /* padding: 0px 50px; */
+        position: relative;
+    }
+}

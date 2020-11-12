@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="style/font-awesome.css">
+    <link rel="stylesheet" href="style/formulario.css">
+
+    <title>Green-SPA trabalhe conosco</title>
+</head>
+<body>
+    
+    <header>
+        <div class="center">
+        <div class="logo left"> <a href="index.html"> <img id="logomarca" src="images/logoM.png"> </a>  </div> <!--Logomarca-->
+
+        <nav class="desktop right">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="cadastro.html"> Fale Conosco </a></li>
+                <li> <a href="servicos.html"> Serviços </a></li>
+                <li> <a href="formulario.html">Trabalhe Conosco </a></li>
+                <li> <a href="noticias.html">Notícias </a></li>
+            </ul>
+        </nav>
+        <nav class="mobile right">
+        <div class="botao-menu-mobile">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="cadastro.html"> Fale Conosco </a></li>
+                <li> <a href="servicos.html"> Serviços </a></li>
+                <li> <a href="formulario.html">Trabalhe Conosco </a></li>
+                <li> <a href="noticias.html">Notícias </a></li>
+            </ul>
+        </nav>
+        <div class="clear"> </div>
+        </div>  <!--center-->
+    </header>
+
+    <form METHOD = "POST" name="Cadastro" action="http:://terra.planetarium.com.br/cgi-bin/processform.ogi">
+
+    <h1> Preecha o formulário! </h1>
+
+
+
+    <form action="#" method="post">
+
+
+    <section class="formulario">
+        <div class="flex">
+
+        <fieldset class="grupo "> <legend> Nome Completo: </legend>
+            <div class="campo">
+                <input type="text" id="nome" name="nome" style="width: 30em;" value="" />
+            </div>
+        </fieldset> 
+    
+        <fieldset class="grupo"> <legend> Data de Nascimento: </legend>
+            <div class="campo">   
+                <input type="text" id="datan" name="datan" style="width: 10em;" placeholder="00/00/0000" />
+            </div>
+        </fieldset>	
+
+        </div>
+
+    
+        <div class="flex">
+        <fieldset class="grupo"> <legend> Gênero: </legend>
+            <div class="campo">
+                <label class="checkbox">
+                    <input type="radio" name="sexo" value="masculino"> Masculino
+                </label>
+
+                <label class="checkbox">
+                    <input type="radio" name="sexo" value="feminino"> Feminino
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo"> <legend> Filiação: </legend>
+            <div class="campo">
+                <label for="nomedopai"> Nome Completo do Pai </label>
+   
+                <input type="text" id="nomedopai" name="nomedopai" style="width: 30em;" value="" /> 
+<br>
+                <label for="nomedamae"> Nome Completo da Mãe </label>
+       
+                <input type="text" id="nomedamae" name="nomedamae" style="width: 30em;" value="" /> 
+            </div>
+        </fieldset>
+
+        </div>
+
+
+        <div class="flex">
+        <fieldset class="grupo"> <legend> Natural de: </legend>
+            <div class="campo">
+                <label for="municipio"> Município: </label>
+<br>    
+                <input type="text" id="municipio" name="municipio" style="width: 20em;" value="" /> 
+<br>       
+                <label for="estado5"> Estado/UF: </label>
+
+                <br>
+                    <select type="estado5" name="estado" id="estado">
+                        <option value="AC">AC</option> <option value="AL">AL</option> <option value="AM">AM</option>
+                        <option value="BA">BA</option> <option value="CE">CE</option> <option value="DF">DF</option>
+                        <option value="ES">ES</option> <option value="GO">GO</option> <option value="MA">MA</option>
+                        <option value="MG">MG</option> <option value="MT">MT</option> <option value="MS">MS</option>
+                        <option value="PA">PA</option> <option value="PB">PB</option> <option value="PE">PE</option>
+                        <option value="PI">PI</option> <option value="PR">PR</option> <option value="RJ">RJ</option>
+                        <option value="RN">RN</option> <option value="RO">RO</option> <option value="RR">RR</option>
+                        <option value="RS">RS</option> <option value="SC">SC</option> <option value="SE">SE</option>
+                        <option value="SP">SP</option> <option value="TO">TO</option>
+                    </select>
+<br>       
+                <label for="nacionalidade"> Nacionalidade: </label>
+<br>    
+                <input type="text" id="nacionalidade" name="nacionalidade" style="width: 20em;" value="" />
+        </div>
+        </fieldset>
+
+        <fieldset class="grupo"> <legend> E-mails: </legend>
+            <table>
+            <div class="campo">
+                <tr><td><label for="email"> seu melhor e-mail: </label></td>
+  
+                <td><input type="text" id="email" name="email" style="width: 20em;" value="" /></td> </tr>
+                <tr><br></tr>
+                <tr><td><center><label for="email2"> Email_2: </label></center></td>
+    
+                <td><input type="text" id="email2" name="estado" style="width: 20em;" value="" /></td> </tr>
+        </div></table></fieldset>
+        </div>
+
+
+<div class="flex">
+     <fieldset class="grupo"> <legend> Endereço: </legend>
+        <div class="campo">
+                <label for="logradouro"> Logradouro: (Rua, Avenida, Rodovia, Alameda, etc.) </label>
+<br>    
+                <input type="text" id="logradouro" name="logradouro" style="width: 35em;" value="" /> 
+<br>       
+                <label for="endereco"> Endereço: </label>
+<br>    
+                <input type="text" id="endereco" name="endereco" style="width: 20em;" value="" />
+<br>       
+                <label for="numero"> Número: </label>
+<br>    
+                <input type="text" id="numero" name="numero" style="width: 10em;" value="" />
+<br>       
+                <label for="bairro"> Bairro: </label>
+<br>    
+                <input type="text" id="bairro" name="bairro" style="width: 20em;" value="" />
+<br>       
+                <label for="complemento"> Complemento: (Casa, Apartamento) </label>
+<br>    
+                <input type="text" id="complemento" name="complemento" style="width: 10em;" value="" />
+<br>       
+                <label for="referencia"> Referência: </label>
+<br>    
+                <input type="text" id="referencia" name="referencia" style="width: 20em;" value="" />
+                <br>       
+                <label for="cidade"> Cidade: </label>
+<br>    
+                <input type="text" id="cidade" name="cidade" style="width: 20em;" value="" />
+                <br>       
+                <label for="estado"> Estado: </label>
+<br>    
+                <input type="text" id="estado" name="estado" style="width: 20em;" value="" />
+                <br>       
+                <label for="cep"> CEP: </label>
+<br>    
+                <input type="text" id="cep" name="cep" style="width: 20em;" value="" />   
+    </div></fieldset>
+    
+
+    <fieldset class="grupo"><legend>Telefone para contato: </legend>
+        <div>        
+            <label for="residencial"> Residencial </label>
+<br>
+            <input type="text" id="residencial" name="residencial" style="width: 20em;" value="" />
+<br>
+            <label for="celular"> Celular </label>
+<br>
+            <input type="text" id="celular" name="celular" style="width: 20em;" value="" />
+<br>
+            <label for="comercial"> Comercial </label>
+<br>
+            <input type="text" id="comercial" name="comercial" style="width: 20em;" value="" />
+<br>
+            <label for="recado"> Recado </label>
+<br>
+            <input type="text" id="recado" name="recado" style="width: 20em;" value="" />
+        </div>
+    </fieldset>
+</div>
+
+<div class="flex">
+    <fieldset class="grupo"><legend> RG: </legend>
+        <div>        
+            <label for="num"> Nº </label>
+<br>
+            <input type="text" id="num" name="num" style="width: 20em;" value="" />
+<br>
+            <label for="expedicao"> Data de Expedição </label>
+<br>
+            <input type="text" id="expedicao" name="expedicao" style="width: 20em;" value="" />
+<br>
+            <label for="sigla"> Sigla do Orgão Expeditor: ( dd/mm/aaaa) </label>
+<br>
+            <input type="text" id="sigla" name="sigla" style="width: 20em;" value="" />
+<br>
+            <label for="estado"> Estado </label>
+<br>
+            <input type="text" id="estado" name="estado" style="width: 20em;" value="" />
+        </div>
+    </fieldset>
+<br>
+    <fieldset class="grupo"><legend> CPF: </legend>
+        <div> 
+            <label for="num2"> Nº </label>
+<br>
+            <input type="text" id="num2" name="num2" style="width: 20em;" value="" />
+<br>
+            <label for="expedicao2"> Data de Expedição </label>
+<br>
+            <input type="text" id="expedicao2" name="expedicao2" style="width: 20em;" value="" />
+        </div>
+    </fieldset>
+</div>
+
+<div class="flex">
+    <fieldset class="grupo"><legend> Carteira de Trabalho: </legend>
+        <div> 
+            <label for="num5"> Nº </label>
+<br>
+            <input type="text" id="num5" name="num5" style="width: 20em;" value="" />
+<br>
+            <label for="serie"> Série </label>
+<br>
+            <input type="text" id="serie" name="serie" style="width: 20em;" value="" />
+        </div>
+    </fieldset>
+
+<br>
+    <fieldset class="grupo"><legend> Deficiente Físico: </legend>
+        <div>
+            <label class="checkbox">
+            <input type="radio"  name="estadoC" value="sim" />Sim
+            </label>
+
+            <label class="checkbox">
+
+            <input type="radio"  name="estadoC" value="nao" />Não
+            </label>
+<br><br>
+            <label for="qual"> Qual? </label>
+<br>
+            <input type="text" id="qual" name="qual" style="width: 20em;" value="" />
+        </div>
+    </fieldset>
+
+    <section class="botoes">
+    <button class="botao submit" type="submit" name="submit">Enviar</button>
+    <button class="botao resetar" type="reset" name="cancelar">Redefinir</button>
+    </section>
+</div>
+
+
+    </section>
+
+    </form>
+    </form>
+
+    <footer>
+        <div class="footer">
+        <a href="noticias.html"> O seu conforto é nossa especialidade! </a>
+        </div> <!-- center -->
+    </footer>
+
+    <script src="js/jquery.js"></Script>
+        <script src="js/scripts.js"></script>
+
+</body>
+</html>
